@@ -9,5 +9,13 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="WrongWindowSize"
         ExtendClientAreaToDecorationsHint="True">
+    <Grid>
+		<Label>Text to show Left/Top affected</Label>
+		<Label>Text to show Top also affected</Label>
+        <Label Name="SizeLabel" Foreground="White" Margin="50">Window size:</Label>
+        <Button VerticalAlignment="Top" Margin="50,100,50,50" Click="Button_OnClick">Update Size</Button>
         <views:MainView />
+		<Label VerticalAlignment="Bottom" HorizontalAlignment="Right">Text to show Bottom/Right affected</Label>
+    </Grid>
+    
 </Window>
