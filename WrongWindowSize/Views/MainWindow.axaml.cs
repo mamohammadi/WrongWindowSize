@@ -12,6 +12,6 @@ public partial class MainWindow : Window
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
     {
-        SizeLabel.Content = $"Window size: {this.ClientSize}";
+        SizeLabel.Content = $"Window size: {Width},{Height}";
     }
 }
